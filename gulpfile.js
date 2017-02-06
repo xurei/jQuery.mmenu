@@ -91,6 +91,7 @@ gulp.task( 'js-concat-navbar', [ 'js-copy' ], function() {
 //	3) concatenate core + offCanvas + scrollBugFix in dist dir
 gulp.task( 'js-concat-core', [ 'js-concat-navbar' ], function() {
 	return gulp.src([
+			outputDir + '/js/jquery.mmenu.node.min.js',
 			outputDir + '/js/jquery.mmenu.oncanvas.min.js',
 			outputDir + '/addons/offcanvas/jquery.mmenu.offcanvas.min.js',
 			outputDir + '/addons/scrollbugfix/jquery.mmenu.scrollbugfix.min.js',
@@ -102,6 +103,7 @@ gulp.task( 'js-concat-core', [ 'js-concat-navbar' ], function() {
 //	4) concatenate core + offCanvas + scrollBugFix + addons in dist dir
 gulp.task( 'js-concat-all', [ 'js-concat-core' ], function() {
 	return gulp.src([
+			outputDir + '/js/jquery.mmenu.node.min.js',
 			outputDir + '/js/jquery.mmenu.oncanvas.min.js',
 			outputDir + '/addons/offcanvas/jquery.mmenu.offcanvas.min.js',
 			outputDir + '/addons/scrollbugfix/jquery.mmenu.scrollbugfix.min.js',

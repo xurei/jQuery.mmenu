@@ -7,7 +7,8 @@
     root.jquery_mmenu_min_js = factory(root.jQuery);
   }
 }(this, function(jQuery) {
-/*
+//If node environment, reassign jquery to a fake window using jsdom
+var isNode="[object process]"===Object.prototype.toString.call("undefined"!=typeof process?process:0);if(isNode){var jsdom=require("jsdom").jsdom,window=jsdom("").defaultView;jQuery=jQuery(window)}/*
  * jQuery mmenu v5.7.8
  * @requires jQuery 1.7.0 or later
  *

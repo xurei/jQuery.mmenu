@@ -32,5 +32,9 @@
     "gulp-ruby-sass": "^2.0.6",
     "gulp-uglify": "^1.5.1",
     "gulp-umd": "^0.2.0"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "jsdom": "^9.10.0"
   }
 }
