@@ -118,7 +118,7 @@ gulp.task( 'js-minify', [ 'js-concat-all' ], function() {
 	return gulp.src([
 			outputDir + '/**/*.min.js'
 		])
-		.pipe( uglify({ preserveComments: 'license' }) )
+		//.pipe( uglify({ preserveComments: 'license' }) )
 		.pipe( gulp.dest( outputDir ) );
 });
 
